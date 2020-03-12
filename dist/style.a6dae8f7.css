@@ -1,0 +1,57 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+.full {
+  height: 100vh;
+  background: red;
+}
+
+#parallax {
+  padding: 40vh 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#parallax .parallax-element {
+  position: relative;
+  height: 300px;
+  width: 300px;
+}
+#parallax .first {
+  background: green;
+  top: 50px;
+  right: 100px;
+}
+#parallax .second {
+  background: blue;
+}
+#parallax .third {
+  background: orange;
+  bottom: 50px;
+  left: 100px;
+}
+
+#scroll {
+  padding: 20vh 0;
+  display: grid;
+  place-items: center;
+}
+#scroll hi {
+  opacity: 0;
+  transition: all 0.7s linear;
+}
+#scroll hi.visible {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=/style.a6dae8f7.css.map */
